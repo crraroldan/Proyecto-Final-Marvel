@@ -20,8 +20,7 @@ nav {
 
 nav a {
   color: antiquewhite;
-  padding: 3vh 3vh;
-  text-decoration: none;
+  padding: 2vh 2vh;
 }
 
 .row {
@@ -36,13 +35,6 @@ aside {
   text-align: center;
 }
 
-section {
-  flex: 10vh;
-  background-color: blue;
-  padding: 1vh;
-  text-align: center;
-}
-
 footer {
   flex: 10vh;
   padding: 1vh;
@@ -51,9 +43,7 @@ footer {
 }
 
 table {
-  height: 10vh;
   flex: 10vh;
-  width: 20vh;
   padding: 1vh;
   background-color: rgb(184, 184, 184);
   text-align: center;
