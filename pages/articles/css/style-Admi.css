@@ -15,12 +15,12 @@ header {
 }
 
 .flex-container {
-  background-color: rgb(16, 163, 3);
+  background-color: rgb(6, 223, 219);
   flex-direction: column;
   align-items: center;
   display: grid;
   height: 8vh;
-  width: 15vh;
+  width: 20vh;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav a {
 aside {
   flex: 10vh;
   background-color: brown;
-  padding: 0.5vh;
+  padding: 1vh;
   text-align: center;
 }
 

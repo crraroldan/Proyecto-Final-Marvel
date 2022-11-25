@@ -15,23 +15,45 @@ header {
 }
 
 .flex-container0 {
-  background-color: rgb(246, 246, 0);
+  background-color: rgb(164, 246, 0);
   flex-direction: column;
   align-items: center;
   display: grid;
   height: 8vh;
-  width: 15vh;
+  width: 20vh;
+}
+
+.flex-container01 {
+  background-color: rgb(10, 187, 10);
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  height: 4vh;
+  width: 12vh;
+}
+
+
+
+   
+.user1{
+
+  text-align: center;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  background-color: rgb(82, 86, 85);
+  background-color: rgb(10, 153, 117);
+  justify-content: center;
+ 
+
 }
 
 nav a {
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   padding: 2vh 2vh;
+  
+ 
 }
 
 .row {
@@ -47,21 +69,75 @@ aside {
 
 section {
   flex: 10vh;
-  background-color: aqua;
+  background-color: rgb(64, 255, 0);
   padding: 1vh;
 }
 
-.flex-container {
-  display: grid;
-  background-color: brown;
+.seccion1{
+
+  width: 20em;
+
+
+  
 }
 
-.flex-container div {
-  background-color: aquamarine;
-  margin: 0.5vh;
-  width: 20vh;
+.flex-container {
+  display: grid;  
+  background-color: rgb(235, 34, 34);
+  
+ 
+
+  
+}
+
+
+.flex-container100 {
+  display: grid;
+  background-color: rgb(202, 98, 0);
+  justify-content: center;
+}
+
+.flex-container22{
+
+  background-color: rgb(0, 18, 138);
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  height: 4vh;
+  width: 100%;
+ 
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+
+
+
+
+}
+
+
+.flex-container  {
+  background-color: rgb(39, 156, 117);
+
+  width: 100%;
   color: rgb(0, 0, 0);
   text-align: center;
+
+ 
+  
+}
+.flex-container div{
+  width: 100%;
+  background-color: rgb(0, 216, 254);
+
+  margin-bottom: 1vh;
+
+  margin-top: 1vh;
+
+
+  
+
 }
 
 footer {
@@ -93,3 +169,10 @@ footer {
 }
 @media (min-width: 1400px) {
 }
+
+
+
+
+
+
+
