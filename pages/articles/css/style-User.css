@@ -152,10 +152,10 @@ footer {
 #div1 {
   overflow: scroll;
   height: 30vh;
-  width: 43vh;
+  width:100%;
 }
 #div1 table {
-  width: 43vh;
+  width: 100%;
   background-color: rgb(121, 121, 121);
 }
 
