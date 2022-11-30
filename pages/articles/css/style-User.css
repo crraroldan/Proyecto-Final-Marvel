@@ -8,14 +8,14 @@
 
 header {
   padding: 5vh;
-  background-color: brown;
+  background-color: rgb(197, 53, 53);
   text-align: left;
   justify-content: space-between;
   display: flex;
 }
 
 .flex-container0 {
-  background-color: rgb(164, 246, 0);
+  background-color: rgb(84, 84, 84);
   flex-direction: column;
   align-items: center;
   display: grid;
@@ -24,7 +24,7 @@ header {
 }
 
 .flex-container01 {
-  background-color: rgb(10, 187, 10);
+  background-color: rgb(72, 7, 7);
   flex-direction: column;
   align-items: center;
   display: grid;
@@ -43,7 +43,7 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  background-color: rgb(10, 153, 117);
+  background-color: rgb(76, 76, 76);
   justify-content: center;
  
 
@@ -63,13 +63,13 @@ nav a {
 
 aside {
   flex: 10vh;
-  background-color: blue;
+  background-color: rgb(197, 53, 53);
   padding: 1vh;
 }
 
 section {
   flex: 10vh;
-  background-color: rgb(64, 255, 0);
+  background-color:rgb(197, 53, 53);
   padding: 1vh;
 }
 
@@ -93,13 +93,13 @@ section {
 
 .flex-container100 {
   display: grid;
-  background-color: rgb(202, 98, 0);
+  background-color: rgb(197, 53, 53);
   justify-content: center;
 }
 
 .flex-container22{
 
-  background-color: rgb(0, 18, 138);
+  background-color: rgb(78, 78, 78);
   flex-direction: column;
   align-items: center;
   display: grid;
@@ -118,7 +118,7 @@ section {
 
 
 .flex-container  {
-  background-color: rgb(39, 156, 117);
+  background-color: rgb(0, 0, 0);
 
   width: 100%;
   color: rgb(0, 0, 0);
@@ -129,7 +129,7 @@ section {
 }
 .flex-container div{
   width: 100%;
-  background-color: rgb(0, 216, 254);
+  background-color: rgb(166, 166, 166);
 
   margin-bottom: 1vh;
 
@@ -144,7 +144,7 @@ footer {
   flex: 10vh;
   padding: 1vh;
   text-align: center;
-  background-color: blueviolet;
+  background-color: rgb(197, 53, 53);
 }
 
 /* ---------------------------------------------- */

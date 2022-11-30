@@ -39,7 +39,7 @@
         <div class="flex-container">
 
           <div class="User1">
-            <center><img src="img/usuario.jpg" height="100" width="100"></center>
+            <center><img src="img/usuario.jpg" height="300" width="300"></center>
           </div>
 
           <div class="User2">
@@ -59,26 +59,34 @@
 
 
       <section>
-        <h2>Section</h2> 
+        <h2>USUARIO</h2> 
 
        
 
         <div class="flex-container">
 
-                <div class="seccion1"style="order: 1">id: 7</div>
-                <div class="seccion1"style="order: 2">Vera Rubin</div>
-                <div class="seccion1"style="order: 3">@gmail</div>
-                <div class="seccion1"style="order: 3"><h4>Cambiar contraseña</h4></div>
-                <div class="seccion1"style="order: 4"> <input type="password" class="form-control" placeholder="Password"></div>
-                <div class="seccion1"style="order: 5"> <input type="password" class="form-control" placeholder="New password"></div>
-                <div class="seccion1"style="order: 6"> <input type="password" class="form-control" placeholder="Repeat password"></div>
+                <div class="seccion1"style="order: 1">id:07</div>
+                <div class="seccion1"style="order: 2">Rubin Satin</div>
+                <div class="seccion1"style="order: 3">RubinSatin@gmail</div>
+                <div class="seccion1"style="order: 4"><h4>Cambiar contraseña</h4></div>
+                
+                <form name="seccion1"  action="" method="POST"  style="order: 5"   onsubmit='return validatePassword()'>
 
+                  <div class="seccion1"style="order: 6"> <div>Password Actual: <input type="password" name="passwordActual"></div></div>
+                  <div class="seccion1"style="order: 7"> <div>Nuevo Password: <input type="password" name="passwordNew1"></div></div>
+                  <div class="seccion1"style="order: 8"> <div>Repite Password: <input type="password" name="passwordNew2"></div></div>
+                  <div class="seccion1"style="order: 9"> <div><input type="submit" value="Modificar Password"></div></div>
+                
+                
+                
+                </form>
+                
         </div>
       </section>
     </div>
 
     <section>
-      <h2>Section2</h2>
+      
 
       <div class="flex-container">
 
@@ -87,65 +95,57 @@
         <div id="div1">
           <table border="1">
             <tr>
-              <td>1</td>
+              <td>Rubin Satin</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Chapulin-colorado_500</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Tupac_pacanaca700003</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Oliiver Truan 23</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Excaletrixmunition</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Loquendo70034</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Car-jhonson-cj</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Cassandra-santillana</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Luisito-El rey Palomo</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Chalino_cuernodechivo</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>El_Nando-chumbo</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Maxpower</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Homero-viajero34</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Pelado-malvado_1</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Raquel-villavicencio</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>Elfresa3454</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td>El Tracaloso</td>
             </tr>
-            <tr>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>1</td>
-            </tr>
+        
           </table>
         </div>
       </div>
@@ -189,5 +189,78 @@
                
 
     </footer>
+
+
+
+    <title>Validar Contraseña</title>
+        <meta charset="utf-8">
+     
+        <style>
+        .error {color:red;}
+        form {width:400px;font-family:Arial;}
+        form input {font-family:Arial;}
+        form>div {margin:5px;}
+        form>div:last-child {text-align:center;margin-top:10px;}
+        </style>
+     
+        <script>
+        /**
+         * Function que inserta un error por encima del elemento recibido
+         * @param element -> texto que haga referencia al elemento
+         * @param error -> texto del error
+         */
+        const showError = (element, error) => {
+            const errorEl=document.createElement("div");
+            errorEl.setAttribute("class","error");
+            errorEl.innerHTML=error;
+            document.querySelector(element).parentElement.prepend(errorEl);
+        }
+     
+        const validatePassword = () => {
+            //Cogemos los valores actuales del formulario
+            const pasActual=document.seccion1.passwordActual.value;
+            const pasNew1=document.seccion1.passwordNew1.value;
+            const pasNew2=document.seccion1.passwordNew2.value;
+     
+            //Patron para los numeros
+            const patron1=new RegExp("[0-9]+");
+            //Patron para las letras
+            const patron2=new RegExp("[a-zA-Z]+");
+     
+            // Eliminamos los posible errores
+            for (let el of document.querySelectorAll("div[class=error]")) {
+                el.remove();
+            }
+     
+            if (pasNew1!=pasNew2 || pasNew1.length<6 || pasActual=="" || pasNew1.search(patron1)<0 || pasNew1.search(patron2)<0) {
+                if (pasActual=="") {
+                    showError("input[name=passwordActual]", "Indicar tu contraseña actual");
+                }
+                if (pasNew1.length<6) {
+                    showError("input[name=passwordNew1]", "La longitud mínima tiene que ser de 6 caracteres");
+                } else if (pasNew1!=pasNew2) {
+                    showError("input[name=passwordNew1]", "La copia de la nueva contraseña no coincide");
+                } else if (pasNew1.search(patron1)<0 || pasNew1.search(patron2)<0) {
+                    showError("input[name=passwordNew1]", "La contraseña tiene que tener numeros y letras");
+                }
+                return false;
+            }
+            return true;
+        }
+        </script>
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
