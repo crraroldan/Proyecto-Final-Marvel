@@ -8,14 +8,14 @@
 
 header {
   padding: 5vh;
-  background-color: brown;
+  background-color: rgb(177, 33, 33);
   text-align: left;
   justify-content: space-between;
   display: flex;
 }
 
 .flex-container {
-  background-color: rgb(6, 223, 219);
+  background-color: rgb(93, 0, 0);
   flex-direction: column;
   align-items: center;
   display: grid;
@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-  color: antiquewhite;
+  color: rgb(241, 241, 241);
   padding: 2vh 2vh;
 }
 
@@ -50,7 +50,7 @@ footer {
   flex: 10vh;
   padding: 2vh;
   text-align: center;
-  background-color: blueviolet;
+  background-color: rgb(177, 33, 33);
 }
 
 table {
